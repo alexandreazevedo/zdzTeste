@@ -30,7 +30,7 @@
           v-model="estacionamento.marcaModeloCor" label="Marca/Modelo/Cor" required>
         </v-text-field>
 
-        <v-btn :disabled='!valid' color='success' class='mr-4' @click='submit'>
+        <v-btn :disabled='!valid' color='success' class='mr-4' @click='addSalvar'>
           Salvar
         </v-btn>
 
@@ -71,7 +71,7 @@ export default {
   }),
 
   methods: {
-    submit() {
+    addSalvar() {
       this.$refs.form.submit()
     },
   },
